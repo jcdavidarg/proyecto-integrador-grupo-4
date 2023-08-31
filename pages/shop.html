@@ -1,9 +1,177 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHOP</title>
+    <title>Shop</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <picture>
+          <a href="/">
+            <img src="../img/branding/logo_light_horizontal.svg" alt="icono de la marca" />
+          </a>
+        </picture>
+        <ul>
+          <li>
+            <a href="shop.html"
+              >SHOP
+              <img src="../icons/Vector 1 (Stroke).svg" alt="flecha" /> ></a
+            >
+          </li>
+          <li>
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+          <li>
+            <a href="./login.html">LOGIN</a>
+          </li>
+          <li>
+            <a href="">
+              <img src="../icons/cart-icon.svg" alt="carrito" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <div>
+          <label>BUSCAR</label>
+          <input type="text" name="search" />
+        </div>
+        <div>
+          <label>ORDERNAR POR</label>
+          <select name="orderby" id="orderby">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+            <option value="desc">Mayor precio</option>
+            <option value="asc">Menor precio</option>
+          </select>
+        </div>
+        <div>
+          <span>PRECIO</span>
+          <div>
+            <label for="min">MIN</label>
+            <input type="text" name="min" id="min" placeholder="0" />
+            <label for="max">- MAX</label>
+            <input type="text" name="max" id="max" placeholder="0" />
+          </div>
+        </div>
+        <div>
+          <span for="filter">FILTRAR</span>
+          <div>
+            <input type="checkbox" name="filter" />
+            <label for="">NUEVOS</label>
+          </div>
+          <div>
+            <input type="checkbox" name="filter" />
+            <label for="">OFERTAS</label>
+          </div>
+          <div>
+            <input type="checkbox" name="filter" />
+            <label for="">EDICIÓN ESPECIAL</label>
+          </div>
+          <div>
+            <input type="checkbox" name="filter" />
+            <label for="">FAVORITOS</label>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <ul>
+          <li>
+            <article>
+              <a href="/shop/item/4">
+                <picture>
+                  <span>Nuevo</span>
+                  <img
+                    src="../../img/star-wars/trooper-1.webp"
+                    alt="Figura coleccionable Funko de un Stormtrooper"
+                  />
+                </picture>
+                <div>
+                  <p>Star Wars</p>
+                  <h4>Stormtrooper Lightsaber</h4>
+                  <p>1799.99</p>
+                  <p>3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a href="/shop/item/7">
+                <picture>
+                  <span>Nuevo</span>
+                  <img
+                    src="../../img/pokemon/pidgeotto-1.webp"
+                    alt="Figura coleccionable Funko de un Stormtrooper"
+                  />
+                </picture>
+                <div>
+                  <p>Pokemon</p>
+                  <h4>Pidgeotto Flying</h4>
+                  <p>1799.99</p>
+                  <p>3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a href="/shop/item/12">
+                <picture>
+                  <span>Nuevo</span>
+                  <img
+                    src="../../img/harry-potter/luna-1.webp"
+                    alt="Figura coleccionable Funko de un Stormtrooper"
+                  />
+                </picture>
+                <div>
+                  <p>Harry Potter</p>
+                  <h4>Luna Lovegood Lion Mask</h4>
+                  <p>1799.99</p>
+                  <p>3 CUOTAS SIN INTERÉS</p>
+                </div>
+              </a>
+            </article>
+          </li>
+        </ul>
+        <div>
+          <a href="#">&lt;</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">..</a>
+          <a href="#">9</a>
+          <a href="#">10</a>
+          <a href="#">&gt;</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="./shop.html">SHOP</a>
+          </li>
+          <li>
+            <a href="./login.html">INGRESAR</a>
+          </li>
+          <li>
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="/img/branding/isotype.svg"
+            alt="icono de la marca"
+          />
+        </picture>
+      </nav>
+      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+  </body>
 </html>

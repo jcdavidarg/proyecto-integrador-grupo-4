@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito</title>
+  <!--<link rel="stylesheet" href="carrito.css" >-->
+</head>
+
+<body>
+  <!---ACA EMPIEZA EL HEADER-->
+  <header>
+    <nav>
+      <a href="./home.html"><img src="../img/branding/logo_light_horizontal.svg" alt="logo principal" /></a>
+      <ul>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li>
+          <a href=""><img src="../icons/cart-icon.svg" alt="carrito" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!---ACA TERMINA EL HEADER-->
+
+  <main>
+    <section>
+      <h1>CARRITO DE COMPRAS</h1>
+      <div id="carrito">
+        <table id="lista-carrito" class="">
+          <thead>
+            <tr>
+              <th>Detalle del producto</th>
+              <th>Cantidad </th>
+              <th>Total</th>
+
+            </tr>
+          </thead>
+        </table>
+        <div class="item carrito">
+          <img class="IMAG" src="../img/star-wars/baby-yoda-1.webp" id="IMAGEN BABY YODA">
+          <h3>BABY YODA BLUEBALL</h3>
+          <h4>STAR WARS</h4>
+          <P>precio :$ 1799,99</P>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+        </div>
+        <div class="eliminar-item" onclick="eliminarItemDelCarrito(this)">X</div>
+
+
+
+        <div class="item2 carrito">
+          <img class="ITEMCARRITO" src="../img/pokemon/pidgeotto-1.webp" id="IMAGEN PIDGEOTTO">
+          <h3>PIDGEOTTO</h3>
+          <H4>POKEMON</H4>
+          <P>precio unitario :$ 1799,99</P>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+        </div>
+        <div class="eliminar-item" onclick="eliminarItemDelCarrito(this)">X</div>
+
+        <div id=" Resumencarrito">
+          <H2>RESUMEN </H2>
+          <UL>
+            <li>CANTIDAD DE PRODUCTOS</li>
+            <li>ENVIO</li>
+            <li>SUBTOTAL</li>
+            <H3>TOTAL</H3>
+          </UL>
+          <button class="btn success"> IR A PAGAR </button>
+        </div>
+  </main>
+  <!-- ACA EMPIEZA EL FOOTER -->
+  <footer>
+    <ul class="listafooter">
+      <li class="listafooter"><a href="./shop.html">SHOP</a></li>
+      <li><a href="./login.html">INGRESAR</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+    <img src="../img/branding/isotype.svg" alt="logo principal" />
+
+    <p>All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
+  <!-- ACA TERMINA EL FOOTER -->
+</body>
+
+</html>

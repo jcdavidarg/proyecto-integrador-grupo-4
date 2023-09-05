@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  /* COLORES */
+  --primary-color-solid: #ff3333;
+  --seconday-color-solid: #1d84b5;
+  --primary-bg-solid: #30343f;
+  --secondary-gb-solid: #fafaff;
+
+  /* TIPOGRAFIA */
+  --primary-font: "Raleway", sans-serif;
+  --secondary-font: "font-family: 'Inter', sans-serif;";
+
+  /* TAMAÑO LETRA */
+  --font-display: 4.6em;
+  --font-xlarge: 3em;
+  --font-medium: 2.4em;
+  --font-smaill: 1.6em;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}

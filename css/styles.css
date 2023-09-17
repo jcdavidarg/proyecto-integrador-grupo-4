@@ -16,7 +16,17 @@
   --font-display: 4.6em;
   --font-xlarge: 3em;
   --font-medium: 2.4em;
-  --font-smaill: 1.6em;
+  --font-small: 1.6em;
+
+  /* TAMAÑOS */
+  --container-width: 120rem;
+}
+
+/* CLASES RE-UTILIZABLES */
+.flex-row-centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -32,8 +42,89 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+  font-size: inherit;
 }
 
 html {
+  /*  */
   font-size: 62.5%;
+}
+
+header {
+  background-color: var(--primary-bg-solid);
+  color: var(--secondary-gb-solid);
+  height: 14.4rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: var(--font-medium);
+  font-family: var(--primary-font);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--container-width);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.header-nav ul a {
+  color: inherit;
+}
+
+.header-ul-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 406px;
+  height: 3.1rem;
+}
+
+.header-ul-nav li {
+  display: flex;
+  gap: 1rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 38.8rem;
+  background: url("../img/funkos-banner.webp") no-repeat center center;
+  background-size: cover;
+  /* filter: blur(3px); */
+  /* z-index: -1; */
+}
+
+.banner-info {
+  width: var(--container-width);
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-gb-solid);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: var(--container-width);
+}
+
+.banner-info h2 {
+  font-size: var(--font-xlarge);
+}
+
+.banner-info p {
+  font-size: var(--font-small);
+}
+
+.button-shop {
+  width: 14rem;
+  height: 3rem;
+  background-color: var(--secondary-gb-solid);
+  border-radius: 3.13rem;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  font-size: var(--font-small);
+  color: black;
+  margin-top: 3rem;
 }

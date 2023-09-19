@@ -150,3 +150,60 @@ header {
   color: var(--secondary-font);
   transition: background-color 1s ease, color 1s ease;
 }
+
+.card-descripcion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-descripcion h2 {
+  font-size: var(--font-jumbo);
+}
+
+.card-descripcion p {
+  font-weight: 100;
+  font-size: var(--font-large);
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid var(--primary-color-solid);
+}
+
+.button-coleccion {
+  width: 19rem;
+  height: 4rem;
+  background-color: var(--primary-bg-solid);
+  border-radius: 3.13rem;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+  font-size: var(--font-small);
+  color: var(--secondary-gb-solid);
+  transition: none;
+}
+
+.button-coleccion:hover {
+  background-color: var(--primary-color-solid);
+  transition: background-color 1s ease;
+}
+
+.card-izq {
+  width: var(--container-width);
+  /* background-color: aquamarine; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-der {
+  width: var(--container-width);
+  /* background-color: aquamarine; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}

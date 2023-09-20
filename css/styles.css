@@ -55,6 +55,8 @@ html {
   font-family: var(--primary-font);
 }
 
+/* HEADER */
+
 header {
   background-color: var(--primary-bg-solid);
   color: var(--secondary-gb-solid);
@@ -92,6 +94,8 @@ header {
   gap: 1rem;
 }
 
+/* BANNER */
+
 .banner {
   display: flex;
   justify-content: center;
@@ -100,6 +104,7 @@ header {
   background: url("../img/funkos-banner.webp") no-repeat center center;
   background-size: cover;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .banner::before {
@@ -151,6 +156,8 @@ header {
   color: var(--secondary-font);
   transition: background-color 1s ease, color 1s ease;
 }
+
+/* CARDS MAIN */
 
 .card-descripcion {
   width: 100%;
@@ -208,6 +215,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+/* ULTIMOS LANZAMIENTOS */
 
 .ultimos-lanzamientos {
   display: flex;
@@ -290,4 +299,38 @@ header {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
   z-index: 1;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 5rem;
+  background-color: var(--primary-bg-solid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-gb-solid);
+  font-size: var(--font-medium);
+  height: 34rem;
+  position: relative;
+}
+
+.footer-nav {
+  width: var(--container-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.footer-nav-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.derechos {
+  position: absolute;
+  bottom: 3rem;
 }

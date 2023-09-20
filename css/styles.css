@@ -228,6 +228,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 
 .card-lanzamiento {
@@ -235,6 +236,17 @@ header {
   flex-direction: column;
   gap: 1.5rem;
   font-family: var(--secondary-font);
+  position: relative;
+}
+
+.cartel-roto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color-solid);
+  color: var(--secondary-gb-solid);
+  font-size: var(--font-medium);
+  padding: 1.3rem;
 }
 
 .card-lanzamiento h2 {
@@ -254,4 +266,26 @@ header {
 
 .card-imagen-lanzamiento {
   width: 35rem;
+}
+
+.flecha-izq {
+  position: absolute;
+  width: 5rem;
+  padding: 2rem;
+  left: 0;
+  top: 22rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.flecha-der {
+  position: absolute;
+  width: 5rem;
+  padding: 2rem;
+  right: 0;
+  top: 22rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }

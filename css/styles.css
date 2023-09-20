@@ -52,6 +52,7 @@ a {
 html {
   /*  */
   font-size: 62.5%;
+  font-family: var(--primary-font);
 }
 
 header {
@@ -206,4 +207,51 @@ header {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+}
+
+.ultimos-lanzamientos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: var(--container-width);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.ultimos-lanzamientos h2:first-child {
+  font-size: var(--font-jumbo);
+  width: 100%;
+}
+
+.cards-lanzamientos-carrousell {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-lanzamiento {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: var(--secondary-font);
+}
+
+.card-lanzamiento h2 {
+  font-size: var(--font-medium);
+}
+
+.card-lanzamiento h3,
+.card-lanzamiento p {
+  font-size: var(--font-small);
+}
+
+.card-lanzamiento p:last-child {
+  font-size: var(--font-xsmall);
+  color: var(--seconday-color-solid);
+  font-weight: bold;
+}
+
+.card-imagen-lanzamiento {
+  width: 35rem;
 }

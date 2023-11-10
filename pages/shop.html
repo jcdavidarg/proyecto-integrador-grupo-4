@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="/css/shop.css" >
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav class="navbar container">
         <picture class="navbar__logo">
           <a href="/">
@@ -16,67 +16,67 @@
         </picture>
         <ul class="navbar__menu">
           <li class="navbar__item with-submenu">
-            <a class="icon-shop" href="shop.html">SHOP</a>
+            <a class="navbar__link with-icon" href="shop.html">SHOP
             <img src="/icons/Vector 1 (Stroke).svg" alt="vector-abajo" />
+          </a>
           </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
+          <li class="navbar__item">
+            <a class="submenu__link" href="./contacto.html">CONTACTO</a>
           </li>
-          <li>
-            <a href="./login.html">LOGIN</a>
+          <li class="navbar__item">
+            <a class="submenu__link" href="./login.html">LOGIN</a>
           </li>
-          <li>
-            <a href=""><img src="/icons/cart-icon.svg" alt="carrito" /></a>
+          <li class="navbar__item">
+            <a class="navbar_cart"><img src="/icons/cart-icon.svg" alt="carrito" /></a>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <aside>
+    <main id ="shop" class="container">
+      <aside class="shop__filters filters">
         <div class="filters__search">
-          <label class="filters__title">BUSCAR</label>
-          <input type="text" name="search" placeholder="search"/>
+            <label class="filters__title" for="search">BUSCAR</label>
+            <input type="text" name="search" id="search" placeholder="item o categoría">
         </div>
-        <div claclass="filters__order">
-          <label class="filters__title">ORDERNAR POR
-          <select name="orderby" id="orderby">
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-            <option value="desc">Mayor precio</option>
-            <option value="asc">Menor precio</option>
-          </select>
-        </label>
+        <div class="filters__order">
+            <label class="filters__title" for="orderby">ORDERNAR POR</label>
+            <select name="orderby" id="orderby">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="desc">Mayor precio</option>
+                <option value="asc">Menor precio</option>
+            </select>
         </div>
         <div class="filters__price">
-          <span class="filters__title">PRECIO</span>
-          <div>
-            <label for="min">MIN</label>
-            <input type="text" name="min" id="min" placeholder="0" />
-            <label for="max">- MAX</label>
-            <input type="text" name="max" id="max" placeholder="0" />
-          </div>
+            <span class="filters__title">PRECIO</span>
+            <div>
+                <label for="min">MIN</label>
+                <input type="text" name="min" id="min" placeholder="0">
+                <label for="max">- MAX</label>
+                <input type="text" name="max" id="max" placeholder="0">
+            </div>
         </div>
         <div class="filters__checks">
-          <span class="filters__title" for="filter">FILTRAR</span>
-          <div>
-            <input type="checkbox" name="filter" placeholder="filter"/>
-            <label for="">NUEVOS</label>
-          </div>
-          <div>
-            <input type="checkbox" name="filter" placeholder="filter"/>
-            <label for="">OFERTAS</label>
-          </div>
-          <div>
-            <input type="checkbox" name="filter" placeholder="filter"/>
-            <label for="">EDICIÓN ESPECIAL</label>
-          </div>
-          <div>
-            <input type="checkbox" name="filter" placeholder="filter"/>
-            <label for="">FAVORITOS</label>
-          </div>
+            <span class="filters__title" for="filter">FILTRAR</span>
+            <div>
+                <input type="checkbox" name="filter" id="news" value="news">
+                <label for="">NUEVOS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="offers" value="offers">
+                <label for="">OFERTAS</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="specials" value="specials">
+                <label for="">EDICIÓN ESPECIAL</label>
+            </div>
+            <div>
+                <input type="checkbox" name="filter" id="favs" value="favs">
+                <label for="">FAVORITOS</label>
+            </div>
         </div>
-      </aside>
+    </aside>
       <section class="shop__content">
         <ul class="shop__items">
           <li class="filters__item">
@@ -139,28 +139,28 @@
             </article>
           </li>
         </ul>
-        <div>
-          <a href="#">&lt;</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">..</a>
-          <a href="#">9</a>
-          <a href="#">10</a>
-          <a href="#">&gt;</a>
+        <div class="pagination">
+          <a class="pagination__link" href="#">&lt;</a>
+          <a class="pagination__link" href="#">1</a>
+          <a class="pagination__link" href="#">2</a>
+          <a class="pagination__link" href="#">..</a>
+          <a class="pagination__link" href="#">9</a>
+          <a class="pagination__link" href="#">10</a>
+          <a class="pagination__link" href="#">&gt;</a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <nav class="navbar container">
         <ul class="footer-nav-ul">
-          <li>
-            <a href="./shop.html">SHOP</a>
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./shop.html">SHOP</a>
           </li>
-          <li>
-            <a href="./login.html">INGRESAR</a>
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./login.html">INGRESAR</a>
           </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./contacto.html">CONTACTO</a>
           </li>
         </ul>
         <picture>

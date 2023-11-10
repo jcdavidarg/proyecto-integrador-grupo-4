@@ -4,71 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACTO</title>
+    <link rel="stylesheet" href="/css/contacto.css" >
   </head>
   <body>
-    <header>
-      <nav>
-        <picture>
-          <a href="/">
+    <header class="page-header">
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../home.html">
             <img src="../img/branding/logo_light_horizontal.svg" alt="icono de la marca" />
           </a>
         </picture>
-        <ul>
-          <li>
-            <a href="shop.html"
-              >SHOP
-              <img src="../icons/Vector 1 (Stroke).svg" alt="flecha" /> ></a
-            >
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="shop.html">SHOP
+            <img src="/icons/Vector 1 (Stroke).svg" alt="vector-abajo" />
+          </a>
           </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
+          <li class="navbar__item">
+            <a class="submenu__link" href="./contacto.html">CONTACTO</a>
           </li>
-          <li>
-            <a href="./login.html">LOGIN</a>
+          <li class="navbar__item">
+            <a class="submenu__link" href="./login.html">LOGIN</a>
           </li>
-          <li>
-            <a href="">
-              <img src="../icons/cart-icon.svg" alt="carrito" />
+          <li class="navbar__item">
+            <a class="navbar_cart"><img src="/icons/cart-icon.svg" alt="carrito" /></a>
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <h3>Formulario de contacto</h3>
-    <form action="post">
-      <label for="nombre">Nombre(*): <br>
-        <input type="text" name="nombre" class="contactForm" placeholder="Ingrese su nombre" required>
+    <h3 class="form__input">Formulario de contacto</h3>
+    <div class="form__box"></div>
+    <form class="form__box" action="post">
+      <label class="form__label" for="nombre">Nombre(*): <br>
+        <input class="form__input" type="text" name="nombre" class="contactForm" placeholder="Ingrese su nombre" required>
       </label><br>
-      <label for="email"> Email(*): <br>
-        <input type="email" name="email" class="contactForm" placeholder="Ingrese su correo electronico" required>
+      <label class="form__label" for="email"> Email(*): <br>
+        <input class="form__input" type="email" name="email" class="contactForm" placeholder="Ingrese su correo electronico" required>
       </label> <br>
-      <label for="telefono"> Teléfono: <br>
-        <input type="number" name="telefono" class="contactForm" placeholder="Ingrese su número de teléfono/celular">
+      <label class="form__label" for="telefono"> Teléfono: <br>
+        <input class="form__input" type="number" name="telefono" class="contactForm" placeholder="Ingrese su número de teléfono/celular">
       </label><br>
-      <label for="sitioWeb">Sitio Web: <br>
-        <input type="url" name="sitioWeb" class="contactForm" placeholder="Ingrese su sitio web">
+      <label class="form__label" for="sitioWeb">Sitio Web: <br>
+        <input class="form__input" type="url" name="sitioWeb" class="contactForm" placeholder="Ingrese su sitio web">
       </label><br>
-      <label for="asunto">Asunto(*): <br>
-        <input type="text" name="asunto" class="contactForm" placeholder="Ingre el asuto" required>
+      <label class="form__label" for="asunto">Asunto(*): <br>
+        <inputclass="form__input"  type="text" name="asunto" class="contactForm" placeholder="Ingre el asuto" required>
       </label><br>
-      <label for="mesanje">Mensaje(*): <br>
-        <textarea name="mesanje" class="contactForm" cols="30" rows="10" placeholder="Ingese su mensaje"></textarea>
+      <label class="form__label" for="mesanje">Mensaje(*): <br>
+        <textarea class="form__input" name="mesanje" class="contactForm" cols="30" rows="10" placeholder="Ingese su mensaje"></textarea>
       </label><br>
       <br>
-      <input type="button" value="Enviar">
+      <div class="btn--large btn"><input class="btn--primary" type="button" value="Enviar"></div>
+      
     </form>
-    <p>* los campos son obligatorios</p>
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            <a href="./shop.html">SHOP</a>
+  </div>
+    <p class="form__input">* los campos son obligatorios</p>
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="footer-nav-ul">
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./shop.html">SHOP</a>
           </li>
-          <li>
-            <a href="./login.html">INGRESAR</a>
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./login.html">INGRESAR</a>
           </li>
-          <li>
-            <a href="./contacto.html">CONTACTO</a>
+          <li class="navbar__menu">
+            <a class="navbar__link" href="./contacto.html">CONTACTO</a>
           </li>
         </ul>
         <picture>
@@ -78,7 +80,7 @@
           />
         </picture>
       </nav>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
   </body>
 </html>
